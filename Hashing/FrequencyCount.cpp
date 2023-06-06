@@ -5,14 +5,14 @@
 // Constraints
 // 1 <= N <= 10^5
 // 1 <= a[i] <= 10^7
-// 1 <= 10^5 <= 10^5
+// 1 <= q <= 10^5
 
 #include<bits/stdc++.h>
 using namespace std;
 const int N = 1e7 + 10;
+ int hash[N];
 int main()
 {
-    int hash[N];
     int n;
     cin >> n;
     int arr[n];
