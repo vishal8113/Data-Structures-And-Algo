@@ -114,53 +114,43 @@
 using namespace std;
 int main()
 {
+    int arr[] = {4,2,5,1};
     int n = 5;
-    int arr[] = {4,3,1,2};
 
     int i = 0;
-    while(i < n-1)  // O(n)
-    {
-        if(arr[i] == n)
-        {
-            i++;
-        }
-        int correctIndex = arr[i] - 1;
-        if(i != correctIndex)
-        {
-            swap(arr[i],arr[correctIndex]);
-        }else {
-            i++;
-        }
-
-    }
-    
-    int count = 0;
-    int k;
-    bool printed = false;
-    for(k = 0; k < n- 1; ++k) // On
+    while(i < n - 1)
     {
         if(arr[i] != n)
         {
-            count++;
-        }
-
-        if(arr[k] == k + 1)
+            int correctIndex = arr[i] - 1;
+            if(i != correctIndex)
         {
+            swap(arr[i],arr[correctIndex]);
+        }else{
+            i++;
+        }
+        }else {
+            i++;
+        }
+       
+    }
+
+    int k;
+    bool isPrinted = false;
+    for(k = 0; k < n - 1; ++k)
+    {
+        if(arr[k] == k + 1){
             continue;
         }else {
             cout << k + 1 << endl;
-            printed = true;
+            isPrinted = true;
+            break;
         }
-        
     }
 
-    if(count == k && printed == false)
+    if(isPrinted == false)
     {
         cout << n << endl;
     }
-
-    // T.C => O(n) + O(n) => O(2n)
-    // S.C => O(1)
-
     return 0;
 }
