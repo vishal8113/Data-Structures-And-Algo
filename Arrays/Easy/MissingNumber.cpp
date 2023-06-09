@@ -118,7 +118,7 @@ int main()
     int n = 5;
 
     int i = 0;
-    while(i < n - 1)
+    while(i < n - 1)  // O(n)
     {
         if(arr[i] != n)
         {
@@ -137,7 +137,7 @@ int main()
 
     int k;
     bool isPrinted = false;
-    for(k = 0; k < n - 1; ++k)
+    for(k = 0; k < n - 1; ++k) // O(n)
     {
         if(arr[k] == k + 1){
             continue;
@@ -147,6 +147,9 @@ int main()
             break;
         }
     }
+
+    // T.C => O(2n) => O(n)
+    // S.C => O(1)
 
     if(isPrinted == false)
     {
