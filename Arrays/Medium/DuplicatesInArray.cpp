@@ -102,7 +102,7 @@ int main()
 
     vector<int> ans;
 
-    for(int i = 0; i < n; ++i) // O9n
+    for(int i = 0; i < n; ++i) // O(n)
     {
         if(arr[i] != i + 1)
         {
