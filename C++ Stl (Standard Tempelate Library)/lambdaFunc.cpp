@@ -1,3 +1,5 @@
+// Lambda Functions are short and temporary finctions
+
 #include<bits/stdc++.h>
 using namespace std;
 int main()
