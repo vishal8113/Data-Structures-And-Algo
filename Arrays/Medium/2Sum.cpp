@@ -58,12 +58,12 @@ int main()
 
     map<int,int> m;
 
-    for(int i = 0; i < n; ++i)
+    for(int i = 0; i < n; ++i)  // O(n)
     {
         int num = arr[i];
         int moreNeeded = target - num;
 
-        if(m.find(moreNeeded) != m.end())
+        if(m.find(moreNeeded) != m.end()) // (logn)
         {
             cout << moreNeeded << " " << arr[i];
             break;
@@ -71,5 +71,9 @@ int main()
 
         m[num] = i;
     }
+
+
+    // T.C => O(NlogN)
+    // S.C => O(n)
     return 0;
 }
