@@ -88,6 +88,9 @@ int main()
         }
         cout << endl;
     }
+
+    // T.C => O(n*nlogn)
+    // S.C => O(n) + O(no. of triplets)
     return 0;
 }
 
