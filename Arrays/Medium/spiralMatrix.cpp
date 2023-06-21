@@ -73,5 +73,8 @@ int main()
         cout << i << " ";
     }
 
+    // T.C => O(n*m)
+    // S.C => o(1)
+
     return 0;
 }
