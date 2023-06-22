@@ -135,10 +135,6 @@ void swapfunc(int* arr1,int* arr2,int idx1,int idx2)
     {
         swap(arr1[idx1],arr2[idx2]);
     }
-
-    if (idx2 > 0 && arr1[idx1] > arr2[idx2 - 1]) {
-        swap(arr1[idx1], arr2[idx2 - 1]);
-    }
 }
 int main()
 {
@@ -161,9 +157,9 @@ int main()
             if(left < n && right >= n){
                 swapfunc(arr1,arr2,left,right-n);
             } else if(left >= n) {
-                swapfunc(arr1,arr2,left-n,right-n);
+                swapfunc(arr2,arr2,left-n,right-n);
             } else {
-                swapfunc(arr1,arr2,left,right);
+                swapfunc(arr1,arr1,left,right);
             }
             left++;
             right++;
