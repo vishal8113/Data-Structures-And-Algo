@@ -1,5 +1,5 @@
 // Sort the array of 0s and 1s
-// Ex:- {1,0,1,1,0,1,1,0,1,1} -> {0,0,0,1,1,1,1,1,1,1}
+// Ex:- {1,0,1,1,0,1,1,0,1,1} = {0,0,0,1,1,1,1,1,1,1}
 
 #include<bits/stdc++.h>
 using namespace std;
