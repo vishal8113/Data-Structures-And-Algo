@@ -25,9 +25,7 @@ bool isFound(int* arr,int n,int target)
             start++;
             end--;
             continue;
-        }
-
-        if(arr[start] <= arr[mid])
+        } else if(arr[start] <= arr[mid])
         {
             if(arr[start] <= target && target <= arr[mid])
             {
@@ -43,6 +41,8 @@ bool isFound(int* arr,int n,int target)
                 end = mid - 1;
             }
         }
+
+        
     }
 
     return false;
@@ -53,11 +53,11 @@ int main()
     int arr[] = {3,1,3,3,3,3};
     int n = sizeof(arr)/sizeof(arr[0]);
 
-    bool ans = isFound(arr,n,2);
+    bool ans = isFound(arr,n,3);
 
     cout << ans << endl;
 
-    // T.C => O(n/2) (worst case)
+    // T.C => O(n) (worst case)
     // S.C => O(1)
     return 0;
 }
