@@ -56,5 +56,8 @@ int main()
     bool ans = isFound(arr,n,2);
 
     cout << ans << endl;
+
+    // T.C => O(n/2) (worst case)
+    // S.C => O(1)
     return 0;
 }
