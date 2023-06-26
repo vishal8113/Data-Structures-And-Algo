@@ -24,7 +24,6 @@ bool isFound(int* arr,int n,int target)
         {
             start++;
             end--;
-            continue;
         } else if(arr[start] <= arr[mid])
         {
             if(arr[start] <= target && target <= arr[mid])
