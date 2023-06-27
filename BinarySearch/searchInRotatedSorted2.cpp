@@ -56,7 +56,7 @@ int main()
 
     cout << ans << endl;
 
-    // T.C => O(n) (worst case)
+    // T.C => (logn) best and average), worst O(n)
     // S.C => O(1)
     return 0;
 }
