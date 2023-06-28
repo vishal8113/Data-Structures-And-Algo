@@ -1,4 +1,4 @@
-// count no. of occurences in an sorted array
+// count no. of occurrences in an sorted array
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -67,5 +67,8 @@ int main()
     int ans = second - first + 1;
 
     cout << ans << endl;
+
+    // T.C => O(2logn)
+    // S.C => O(1)
     return 0;
 }
