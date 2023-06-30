@@ -55,5 +55,8 @@ int main()
     int ceil = findCeil(arr,n,x);
 
     cout << floor << '\n' << ceil << endl;
+
+    // T.C => O(logn + logn) => O(2logn)
+    // S.C => O(1)	
     return 0;
 }
