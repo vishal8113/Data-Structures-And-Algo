@@ -3,6 +3,9 @@
 // nums = [7,2,5,10,8], k = 2
 // Output: 18
 
+// T.C => o(log(sum-maxEle + 1)*n)
+// S.C => O(1)
+
 #include<bits/stdc++.h>
 using namespace std;
 
