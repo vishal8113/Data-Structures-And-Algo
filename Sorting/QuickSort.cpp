@@ -58,6 +58,5 @@ int main()
         cout << ele << " ";
     }
 
-
     return 0;
 }
