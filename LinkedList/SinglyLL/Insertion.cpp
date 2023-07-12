@@ -1,4 +1,4 @@
-// Insertion in singly linked list
+// Insertion In Singly Linked List
 
 #include<bits/stdc++.h>
 using namespace std;
