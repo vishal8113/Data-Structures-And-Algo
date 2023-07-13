@@ -58,7 +58,7 @@ int main()
 
     cout << start << endl;
 
-    // T.C => O(log2000)*(log(n+m))
-    // S.C => O(1)
+    // T.C  =>  O(log2000)*(log(n+m))
+    // S.C  =>  O(1)
     return 0;
 }
