@@ -118,5 +118,8 @@ int main()
 
     // print(head);
     print(head);
+
+    // T.C => O(N) + O(N)
+    // S.C => O(1)
     return 0;
 }
