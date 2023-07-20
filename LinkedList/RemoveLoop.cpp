@@ -115,8 +115,7 @@ int main()
 
     createCycle(head,1,3);
     removeCycle(head);
-
-    // print(head);
+    
     print(head);
 
     // T.C => O(N) + O(N)
