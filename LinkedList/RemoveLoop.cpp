@@ -98,7 +98,7 @@ void removeCycle(Node* &head)
         fast = fast->next;
     }
 
-    // Break the cycle by setting the next pointer of the last node to NULL
+    // Break the cycle
     fast->next = NULL;
 
     cout << "Cycle removed from the linked list." << endl;
