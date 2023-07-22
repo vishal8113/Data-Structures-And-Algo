@@ -98,7 +98,7 @@ void removeCycle(Node* &head)
         fast = fast->next;
     }
 
-    // Break the cycle by setting the next pointer of the last node to NULL
+    // Break the cycle
     fast->next = NULL;
 
     cout << "Cycle removed from the linked list." << endl;
@@ -115,8 +115,10 @@ int main()
 
     createCycle(head,1,3);
     removeCycle(head);
-
-    // print(head);
+    
     print(head);
+
+    // T.C => O(N) + O(N)
+    // S.C => O(1)
     return 0;
 }
