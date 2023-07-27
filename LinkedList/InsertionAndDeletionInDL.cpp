@@ -1,4 +1,4 @@
-// Insertion in doubly Linked List
+// Insertion in a doubly Linked List
 
 #include<bits/stdc++.h>
 using namespace std;
