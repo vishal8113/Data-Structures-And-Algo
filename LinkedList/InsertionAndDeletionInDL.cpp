@@ -1,4 +1,4 @@
-// Insertion in doubly Linked List
+// Insertion in a doubly Linked List
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -133,7 +133,6 @@ int main()
 
     InsertAtTail(tail,5);
     print(head);
-    //cout<<"tail:"<<tail->data<<endl;
 
     InsertAtPosition(head,2,2,tail);
     print(head);
